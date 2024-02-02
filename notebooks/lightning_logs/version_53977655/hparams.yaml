@@ -1,0 +1,22 @@
+model:
+  class_path: gnn_tracking.models.graph_construction.GraphConstructionFCNN
+  init_args:
+    in_dim: 14
+    hidden_dim: 64
+    out_dim: 8
+    depth: 5
+    alpha: 0.6
+preproc:
+  class_path: gnn_tracking.models.graph_construction.NoiseClassifierModel
+  init_args: {}
+loss_fct:
+  class_path: gnn_tracking.metrics.losses.metric_learning.GraphConstructionHingeEmbeddingLoss
+  init_args:
+    lw_repulsive: 0.5
+    r_emb: 1.0
+    max_num_neighbors: 10
+    pt_thld: 0.9
+    max_eta: 4.0
+    p_attr: 1.0
+    p_rep: 1.0
+gc_scanner: null
