@@ -1,0 +1,17 @@
+identifier: point_clouds_8
+train:
+  dirs:
+    - /scratch/gpfs/IOJALVO/gnn-tracking/object_condensation/point_clouds_v8/part_1
+    - /scratch/gpfs/IOJALVO/gnn-tracking/object_condensation/point_clouds_v8/part_2
+    - /scratch/gpfs/IOJALVO/gnn-tracking/object_condensation/point_clouds_v8/part_3
+    - /scratch/gpfs/IOJALVO/gnn-tracking/object_condensation/point_clouds_v8/part_4
+    - /scratch/gpfs/IOJALVO/gnn-tracking/object_condensation/point_clouds_v8/part_5
+    - /scratch/gpfs/IOJALVO/gnn-tracking/object_condensation/point_clouds_v8/part_6
+    - /scratch/gpfs/IOJALVO/gnn-tracking/object_condensation/point_clouds_v8/part_7
+    - /scratch/gpfs/IOJALVO/gnn-tracking/object_condensation/point_clouds_v8/part_8
+  sample_size: 900
+val:
+  dirs:
+    - /scratch/gpfs/IOJALVO/gnn-tracking/object_condensation/point_clouds_v10/part_9
+  stop: 5
+cpus: 6
