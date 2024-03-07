@@ -12,6 +12,6 @@ train:
   sample_size: 900
 val:
   dirs:
-    - /scratch/gpfs/IOJALVO/gnn-tracking/object_condensation/point_clouds_v10/part_9
+    - /scratch/gpfs/IOJALVO/gnn-tracking/object_condensation/point_clouds_v8/part_9
   stop: 5
 cpus: 6
